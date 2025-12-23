@@ -47,8 +47,8 @@ h1, h2 {
 }
 
 video, canvas {
-    width: 90vw;               /* MOBILE-FRIENDLY */
-    max-width: 480px;          /* LIMIT ON LAPTOP */
+    width: 60vw;              /* Desktop/Laptop size */
+    max-width: 550px;
     border-radius: 15px;
     box-shadow: 0 0 20px #00eaff;
 }
@@ -77,18 +77,26 @@ video, canvas {
     box-shadow: 0 0 20px #39ff14;
 }
 
-/* MOBILE RESPONSIVE FIXES */
+/* 📱 MOBILE RESPONSIVE FIX (FULL AND CORRECT) */
 @media (max-width: 600px) {
+    video, canvas {
+        width: 90vw;        /* Full mobile width */
+        max-width: none;
+    }
+
     h1 {
         font-size: 28px;
     }
+
     h2 {
         font-size: 20px;
     }
+
     .btn {
         width: 80%;
         font-size: 18px;
     }
+
     .reset-btn {
         width: 70%;
         font-size: 18px;
