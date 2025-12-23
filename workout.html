@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout Mode</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MediaPipe -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="exerciseTitle">Workout</h1>
+
+        <div class="video-box">
+            <video id="video" autoplay></video>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="counter-box">
+            <span id="repCount">Reps: 0</span>
+        </div>
+
+        <button class="reset-btn" onclick="resetCounter()">RESET</button>
+        <br><br>
+        <a href="index.html" class="btn">⬅ Back</a>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="biceps.js"></script>
+    <script src="squats.js"></script>
+    <script src="pushups.js"></script>
+</body>
+</html>
