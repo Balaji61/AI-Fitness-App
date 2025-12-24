@@ -20,7 +20,7 @@ Tracks **Biceps Curls**, **Squats**, and **Pushups** in real-time using webcam a
 - Webcam video processing
 
 ###  Live Demo
-(Will be added once GitHub Pages is enabled)
+https://balaji61.github.io/AI-Fitness-App/
 
 ### Project Structure
 AI-Fitness-App/
